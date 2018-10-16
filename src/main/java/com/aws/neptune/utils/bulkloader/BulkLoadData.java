@@ -126,9 +126,9 @@ public class BulkLoadData {
 	        String regionCode = args[3];
 	        
 	        String loadId = new BulkLoadData().sendLoadDataRequest(neptuneEndpoint, iamRole, s3BucketAndKey, regionCode);
-	        System.out.println("Successfully submitted the bulk load request with id: "+ loadId);
+	        System.out.println("Successfully submitted the bulk load request with loadId: "+ loadId);
 	        new BulkLoadData().pollForCompletion(neptuneEndpoint, loadId);
-	        System.out.println(loadId);
+	        
 	        
 	 }
 	 

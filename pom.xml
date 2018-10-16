@@ -16,10 +16,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>neptune-utils</groupId>
-  <artifactId>neptune-utils</artifactId>
+  <groupId>twitter-like-app</groupId>
+  <artifactId>twitter-like-app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>neptune-utils</name>
+  <name>twitter-like-app</name>
   <description>Tools for Amazon Neptune Graph database</description>
   <build>
     <plugins>
