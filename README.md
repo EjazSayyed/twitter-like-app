@@ -41,7 +41,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.ht
 
 ### 1. Install prerequisites
 Please install and configure all the softwares as mentioned in the prerequisites section above.
-Note that Amazon Neptune is only accessible within a VPC. If you want to access Amazon Neptune instance from outside VPC consider implementing a reverse proxy solution in front of Amazon Netune.
+Note that Amazon Neptune is only accessible within a VPC. <br/>NOTE: If you want to access Amazon Neptune instance from outside VPC consider implementing a reverse proxy solution in front of Amazon Netune.
 
 
 ### 2. Clone the repo
