@@ -10,6 +10,13 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ![](doc/source/images/architecture.png)
 
+## Flow
+
+1. The user clones this GitHub repo (twitter-like-app)
+2. The user generates Twitter sample data using Neptune java utility in this repo (graph data would be available in Amazon S3)
+3. The user loads this data into Amazon Neptune using Amazon Neptune Bulk Loader utility
+4. The user makes search queries and update the graph using Apache Tinkerpop Gremlin client
+
 ## Prerequisites
 
 - Provision Amazon Neptune Cluster (single node)
@@ -18,13 +25,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
 - Install and configure Java and Maven on the above EC2 instance. Please follow the steps upto step#4 from the document @. https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-java.html. 
 - Install Apache Tinkerpop Gremlin client and configure the connectivity to Amazon Neptune as described here - https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-console.html
-
-## Flow
-
-1. The user clones this GitHub repo (twitter-like-app)
-2. The user generates Twitter sample data using Neptune java utility in this repo (graph data would be available in Amazon S3)
-3. The user loads this data into Amazon Neptune using Amazon Neptune Bulk Loader utility
-4. The user makes search queries and update the graph using Apache Tinkerpop Gremlin client
 
 ## Features
 * This is fully extensible code wherein developers can change the number/type of vertices and edges by modifying the config JSON files
