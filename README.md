@@ -20,7 +20,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Flow
 
-1. The user downloads neptune-utils from this gitHub repo
+1. The user clones this GitHub repo (twitter-like-app)
 2. The user generates Twitter sample data using Neptune java utility in this repo (graph data would be available in Amazon S3)
 3. The user loads this data into Amazon Neptune using Amazon Neptune Bulk Loader utility
 4. The user makes search queries and update the graph using Apache Tinkerpop Gremlin client
@@ -55,7 +55,7 @@ mvn package
 
 ### 3. Generate the graph sample
 
-Run the command in `neptune-utils` folder to generate data into `/tmp` folder on a local filesystem and then upload it to the Amazon S3 bucket you would specify as an argument.
+Run the command in `twitter-like-app` folder to generate data into `/tmp` folder on a local filesystem and then upload it to the Amazon S3 bucket you would specify as an argument.
 ```
 ./run.sh gencsv csv-conf/twitter-like-w-date.json <s3-bucket> <bucket-folder>
 ```
