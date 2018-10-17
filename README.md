@@ -69,7 +69,8 @@ NOTE:<br/>1. You need to create and attach an IAM role to Amazon Neptune cluster
 2. You will also need to create an 'Amazon S3 VPC Endpoint' so that Amazon Neptune cluster can have access to S3 over private network.<br/>
 Both of these steps are mentioned in https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-IAM.html
 
-Run below command in `twitter-like-app` folder.
+Run below command in `twitter-like-app` folder to load data from S3 bucket into Amazon Neptune.
+This utility uses Neptune Loader internally to bulk load data into Amazon Neptune. 
 ```
 ./run.sh import <neptune-cluster-endpoint>:<port> <iam-role-arn> <s3-bucket-name>/<folder-name> <aws-region-code>
 
@@ -77,7 +78,7 @@ e.g.
 ./run.sh import mytwitterclst.cluster-crhihlsciw0e.us-east-2.neptune.amazonaws.com:8182 arn:aws:iam::213930781331:role/s3-from-neptune-2 neptune-s3-bucket/twitterlikeapp us-east-1
 ```
 
-Alternatively, Below is the sample `curl` command to load data into Amazon Neptune using Neptune Loader.
+Alternatively, below is the sample `curl` command to load data into Amazon Neptune using Neptune Loader.
 ```
 curl -X POST -H 'Content-Type: application/json' http://<amazon-neptune-cluster-endpoint>:8182/loader -d '
 {
