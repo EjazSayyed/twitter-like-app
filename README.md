@@ -49,7 +49,7 @@ Clone the `neptune-utils` on the EC2 instance and run `mvn package`.
 
 ```
 git clone https://github.com/EjazSayyed/twitter-like-app.git
-cd neptune-utils/
+cd twitter-like-app/
 mvn package
 ```
 
