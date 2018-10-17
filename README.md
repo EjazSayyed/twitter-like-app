@@ -55,10 +55,11 @@ mvn package
 
 ### 3. Generate the graph sample
 
-Run the command in `twitter-like-app` folder to generate data into `/tmp` folder on a local filesystem and then upload it to the Amazon S3 bucket you would specify as an argument.
+Run the below command in `twitter-like-app` folder.
 ```
 ./run.sh gencsv csv-conf/twitter-like-w-date.json <s3-bucket> <bucket-folder>
 ```
+Above command generates Twitter-like data into `/tmp` folder on a local filesystem and then uploads it to the Amazon S3 bucket you would specify as an argument automatically.
 
 ### 4. Load graph data into Amazon Neptune
 
