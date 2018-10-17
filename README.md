@@ -16,7 +16,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 - Create Amazon S3 bucket 
 - Provision an Amazon EC2 instance with Instance Profile that allows to read/write to Amazon S3. 
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
-- Install and configure Java and Maven on the above EC2 instance. For more details please visit https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-java.html. Follow previous doc link upto step#4.
+- Install and configure Java and Maven on the above EC2 instance. Please follow the steps upto step#4 from the document @. https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-java.html. 
 - Install Apache Tinkerpop Gremlin client and configure the connectivity to Amazon Neptune as described here - https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-console.html
 
 ## Flow
