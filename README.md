@@ -45,7 +45,7 @@ Note that Amazon Neptune is only accessible within a VPC. If you want to access 
 
 ### 2. Clone the repo
 
-Clone the `neptune-utils` on the EC2 instance and run `mvn package`.
+Clone the `twitter-like-app` repo on the EC2 instance and run `mvn package`.
 
 ```
 git clone https://github.com/EjazSayyed/twitter-like-app.git
