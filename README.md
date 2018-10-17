@@ -77,7 +77,7 @@ curl -X POST -H 'Content-Type: application/json' http://<amazon-neptune-cluster-
 }'
 ```
 
-Alternatively, just run below command in `neptune-utils` folder.
+Alternatively, just run below command in `twitter-like-app` folder.
 ```
 ./run.sh import <neptune-cluster-endpoint>:<port> <iam-role-arn> <s3-bucket-name>/<optional-key> <aws-region-code>
 
