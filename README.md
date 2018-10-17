@@ -159,7 +159,6 @@ You can send requests to an Amazon Neptune instance running in a VPC from a REST
 * RESTful WS client -> Amazon NLB -> Amazon Neptune
 * Any other similar approaches which exposes Amazon Neptune endpoint through proxy layer
 
-More details on this can be found @ 
 
 # Links
 * [Amazon Neptune Samples](https://github.com/aws-samples/amazon-neptune-samples): Sample data sets and code examples for Amazon Neptune.
