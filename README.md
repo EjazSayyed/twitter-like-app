@@ -65,6 +65,12 @@ Run the command in `neptune-utils` folder to generate data into `/tmp` folder on
 Amazon Neptune provides a process for loading data from external files directly into a Neptune DB instance. You can use this process instead of executing a large number of INSERT statements, addVertex and addEdge steps, or other API calls.
 This utility is called the Neptune Loader. For more information on Loader command please refer - https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load.html
 
+NOTE: 
+1. You need to create and attach an IAM role to Amazon Neptune cluster which will allow the cluster to issue `Get` requests to Amazon S3.
+2. You will also need to create an 'Amazon S3 VPC Endpoint' so that Amazon Neptune cluster can have access to S3 over private network.
+Both of these steps are mentioned in https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-IAM.html
+
+
 Below is the sample `curl` command to load data into Amazon Neptune using Neptune Loader.
 ```
 curl -X POST -H 'Content-Type: application/json' http://<amazon-neptune-cluster-endpoint>:8182/loader -d '
