@@ -25,6 +25,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 - Provision Amazon Neptune Cluster (single node)
 - Create Amazon S3 bucket 
+- Create IAM Role and attach it to the Amazon Neptune cluster for read-only access to Amazon S3
+- Create Amazon S3 VPC Endpoint and attach it to the VPC in which Amazon Neptune cluster is provisioned https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-IAM.html
 - Provision an Amazon EC2 instance with Instance Profile that allows to read/write to Amazon S3. 
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
 - Install and configure Java and Maven on the above EC2 instance. Please follow the steps upto step#4 from the document @. https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-java.html. 
