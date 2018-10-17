@@ -17,6 +17,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 3. The user loads this data into Amazon Neptune using Amazon Neptune Bulk Loader utility
 4. The user makes search queries and update the graph using Apache Tinkerpop Gremlin client
 
+## Features
+* This is fully extensible code wherein developers can change the number/type of vertices and edges by modifying the config JSON files
+* Sample large, medium and tiny config files are provided to test large (upto millions of vertices and edges), medium and small datasets.
+
 ## Prerequisites
 
 - Provision Amazon Neptune Cluster (single node)
@@ -25,11 +29,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
 - Install and configure Java and Maven on the above EC2 instance. Please follow the steps upto step#4 from the document @. https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-java.html. 
 - Install Apache Tinkerpop Gremlin client and configure the connectivity to Amazon Neptune as described here - https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-console.html
-
-## Features
-* This is fully extensible code wherein developers can change the number/type of vertices and edges by modifying the config JSON files
-* Sample large, medium and tiny config files are provided to test large (upto millions of vertices and edges), medium and small datasets.
-
 
 # Steps
 ## Run locally
